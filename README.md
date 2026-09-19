@@ -143,7 +143,6 @@ This provides a baseline for comparing normal DNS traffic with the tunneling dem
 
 ### Normal DNS Traffic
 
-![Normal DNS](screenshots/01-normal-dns.png)
 
 ---
 
@@ -173,7 +172,6 @@ KREESUZAJFJSAQJAIRHFGICUKVHE4RKMEBCEKTKP
 
 The encoded data was then divided into smaller chunks.
 
-![dnsmasq Server](screenshots/02-dnsmasq-server.png)
 
 ---
 
@@ -192,8 +190,6 @@ The demonstration used the following chunks:
 
 The queries were generated using `dig` and sent to the local DNS server.
 
-![Base32 Encoding](screenshots/03-base32-encoding.png)
-
 ---
 
 ### 3. DNS Server Logs
@@ -202,7 +198,6 @@ The local `dnsmasq` server received the DNS queries and logged them.
 
 The server logs show the encoded query labels being received and resolved to the configured local address.
 
-![DNS Query Sending](screenshots/04-dns-query-sending.png)
 
 ---
 
@@ -211,8 +206,6 @@ The server logs show the encoded query labels being received and resolved to the
 Wireshark was used to capture and analyze the DNS traffic generated during the demonstration.
 
 The capture shows normal DNS queries as well as the encoded DNS query labels used in the demonstration.
-
-![Wireshark DNS Capture](screenshots/06-wireshark-capture.png)
 
 ---
 
@@ -231,8 +224,6 @@ The original message was successfully recovered:
 ~~~text
 THIS IS A DNS TUNNEL DEMO
 ~~~
-
-![Decoded Message](screenshots/07-decoded-message.png)
 
 ---
 
