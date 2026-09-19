@@ -173,7 +173,7 @@ KREESUZAJFJSAQJAIRHFGICUKVHE4RKMEBCEKTKP
 
 The encoded data was then divided into smaller chunks.
 
-![Base32 Encoding](screenshots/03-base32-encoding.png)
+![dnsmasq Server](screenshots/02-dnsmasq-server.png)
 
 ---
 
@@ -192,7 +192,7 @@ The demonstration used the following chunks:
 
 The queries were generated using `dig` and sent to the local DNS server.
 
-![DNS Query Sending](screenshots/04-dns-query-sending.png)
+![Base32 Encoding](screenshots/03-base32-encoding.png)
 
 ---
 
@@ -202,7 +202,7 @@ The local `dnsmasq` server received the DNS queries and logged them.
 
 The server logs show the encoded query labels being received and resolved to the configured local address.
 
-![dnsmasq Server](screenshots/02-dnsmasq-server.png)
+![DNS Query Sending](screenshots/04-dns-query-sending.png)
 
 ---
 
@@ -212,7 +212,7 @@ Wireshark was used to capture and analyze the DNS traffic generated during the d
 
 The capture shows normal DNS queries as well as the encoded DNS query labels used in the demonstration.
 
-![Wireshark DNS Capture](screenshots/05-wireshark-capture.png)
+![Wireshark DNS Capture](screenshots/06-wireshark-capture.png)
 
 ---
 
@@ -232,7 +232,7 @@ The original message was successfully recovered:
 THIS IS A DNS TUNNEL DEMO
 ~~~
 
-![Decoded Message](screenshots/06-decoded-message.png)
+![Decoded Message](screenshots/07-decoded-message.png)
 
 ---
 
